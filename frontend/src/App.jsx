@@ -27,7 +27,7 @@ export default function App() {
   useEffect(() => { loadDealers(""); }, []);
   async function openDealer(d) {
     setSelected(d); setReviews([]); setReview("");
-    try { setReviews(await request("/dealers/" + d.id + "/reviews/"); } catch (e) { setMessage(e.message); }
+    try { setReviews(await request("/dealers/" + d.id + "/reviews/")); } catch (e) { setMessage(e.message); }
   }
   async function doLogin(e) {
     e.preventDefault(); setMessage("");
