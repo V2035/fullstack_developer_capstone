@@ -1,10 +1,15 @@
-# Frontend
+# React frontend
 
-The course React frontend can be placed here. Configure it to call the Django API at `http://localhost:8000/api` during local development.
+A Vite + React interface for dealership browsing, state filtering, dealer review viewing, login/logout, and review submission.
 
-## Recommended development setup
+## Local startup
 1. Install Node.js LTS.
-2. Create the course React/Vite app in this directory.
-3. Configure API calls to the Django endpoints documented in the root README.
-4. Use the course-provided components for dealer listing, authentication, dealer detail, and review submission.
-5. Capture screenshots only from the running UI.
+2. From this folder run:
+   ```bash
+   npm install
+   npm run dev
+   ```
+3. The UI defaults to calling Django at `http://localhost:8000/api`.
+4. To change the API address, copy `.env.example` to `.env` and set `VITE_API_URL`.
+
+The backend and dealer records must be running/loaded for data to appear.
